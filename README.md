@@ -1,3 +1,5 @@
+![](https://www.maloufelectronics.com/themes/malouf-electronics/assets/images/full-logo-new-dark.svg)
+
 # ME-ESP8266
 Malouf Electronics - ESP8266 Dev Board
 
