@@ -3,7 +3,7 @@
 # ME-ESP8266
 Malouf Electronics - ESP8266 Dev Board
 
-The ultimate development board built by makers for makers.
+The ultimate ESP8266 development board built by makers for makers.
 
 [BUY NOW](https://www.amazon.com/dp/B08GY2GTW5?ref=myi_title_dp)
 
