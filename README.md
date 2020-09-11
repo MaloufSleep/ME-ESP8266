@@ -8,7 +8,7 @@ The ultimate development board built by makers for makers.
 ![](https://www.maloufelectronics.com/themes/malouf-electronics/assets/images/dev-boards-photo-iso2.png)
 
 
-# SPECIFICATIONS / FEATURES
+## SPECIFICATIONS / FEATURES
 
 ![](https://www.maloufelectronics.com/themes/malouf-electronics/assets/images/board-specs5.png)
 
@@ -22,7 +22,7 @@ The ultimate development board built by makers for makers.
 * Easily accessible GPIO
 * Micro USB (power & programming)
 
-# GETTING STARTED
+## GETTING STARTED
 1. Download Arduino IDE (https://www.arduino.cc/en/Main/Software)
 2. Setup ESP8266 support for Arduino IDE:
 * Start Arduino and open Preferences window.
