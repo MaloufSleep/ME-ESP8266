@@ -1,0 +1,315 @@
+EESchema Schematic File Version 4
+LIBS:ESP8266-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "ESP8266 WiFi "
+Date "2020-06-15"
+Rev "002"
+Comp "Malouf"
+Comment1 "Engineer: Jason Gramse"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Capacitors:CC0603KRX7R9BB104 C?
+U 1 1 5F6A2C82
+P 6475 3050
+AR Path="/5E388B60/5F6A2C82" Ref="C?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2C82" Ref="C18"  Part="1" 
+AR Path="/5F852444/5F6A2C82" Ref="C18"  Part="1" 
+F 0 "C18" V 6219 2800 50  0000 C CNN
+F 1 "CC0603KRX7R9BB104" H 6475 3000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6475 3100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 6475 3100 50  0001 C CNN
+F 4 "C14663" H 6475 3050 50  0001 C CNN "LCSC Part #"
+	1    6475 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitors:CC0603KRX7R9BB104 C?
+U 1 1 5F6A2C89
+P 6975 3050
+AR Path="/5E388B60/5F6A2C89" Ref="C?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2C89" Ref="C19"  Part="1" 
+AR Path="/5F852444/5F6A2C89" Ref="C19"  Part="1" 
+F 0 "C19" V 6719 2800 50  0000 C CNN
+F 1 "CC0603KRX7R9BB104" H 6975 3000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6975 3100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 6975 3100 50  0001 C CNN
+F 4 "C14663" H 6975 3050 50  0001 C CNN "LCSC Part #"
+	1    6975 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Interface_USB:CH340C U?
+U 1 1 5F6A2C90
+P 6525 3775
+AR Path="/5E388B60/5F6A2C90" Ref="U?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2C90" Ref="U5"  Part="1" 
+AR Path="/5F852444/5F6A2C90" Ref="U5"  Part="1" 
+F 0 "U5" H 6575 4325 50  0000 C CNN
+F 1 "CH340C" H 6225 4325 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6575 3225 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 6175 4575 50  0001 C CNN
+F 4 "C84681" H 6525 3775 50  0001 C CNN "LCSC Part #"
+	1    6525 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 3175 6425 3050
+Wire Wire Line
+	6425 3050 6375 3050
+Wire Wire Line
+	6525 3175 6525 3050
+Wire Wire Line
+	6525 3050 6575 3050
+Wire Wire Line
+	6425 3050 6425 2950
+Wire Wire Line
+	6425 2950 6475 2950
+Wire Wire Line
+	6525 2950 6525 3050
+Connection ~ 6425 3050
+Connection ~ 6525 3050
+Wire Wire Line
+	6475 2950 6475 2775
+Connection ~ 6475 2950
+Wire Wire Line
+	6475 2950 6525 2950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F6A2CA2
+P 6475 2775
+AR Path="/5E388B60/5F6A2CA2" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2CA2" Ref="#PWR0108"  Part="1" 
+AR Path="/5F852444/5F6A2CA2" Ref="#PWR0137"  Part="1" 
+F 0 "#PWR0137" H 6475 2625 50  0001 C CNN
+F 1 "+3.3V" H 6490 2948 50  0000 C CNN
+F 2 "" H 6475 2775 50  0001 C CNN
+F 3 "" H 6475 2775 50  0001 C CNN
+	1    6475 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6075 3050 6000 3050
+Wire Wire Line
+	6000 3050 6000 3100
+Wire Wire Line
+	6875 3050 6975 3050
+Wire Wire Line
+	6975 3050 6975 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A2CAC
+P 6000 3100
+AR Path="/5E388B60/5F6A2CAC" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2CAC" Ref="#PWR0109"  Part="1" 
+AR Path="/5F852444/5F6A2CAC" Ref="#PWR0138"  Part="1" 
+F 0 "#PWR0138" H 6000 2850 50  0001 C CNN
+F 1 "GND" H 6005 2927 50  0000 C CNN
+F 2 "" H 6000 3100 50  0001 C CNN
+F 3 "" H 6000 3100 50  0001 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A2CB2
+P 6975 3100
+AR Path="/5E388B60/5F6A2CB2" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2CB2" Ref="#PWR0110"  Part="1" 
+AR Path="/5F852444/5F6A2CB2" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 6975 2850 50  0001 C CNN
+F 1 "GND" H 6980 2927 50  0000 C CNN
+F 2 "" H 6975 3100 50  0001 C CNN
+F 3 "" H 6975 3100 50  0001 C CNN
+	1    6975 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 3375 7100 3375
+Wire Wire Line
+	6925 3475 7100 3475
+$Comp
+L Resistors:0603WAF4700T5E R?
+U 1 1 5F6A2CBB
+P 7450 3375
+AR Path="/5E388B60/5F6A2CBB" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2CBB" Ref="R15"  Part="1" 
+AR Path="/5F852444/5F6A2CBB" Ref="R15"  Part="1" 
+F 0 "R15" V 7375 3050 50  0000 C CNN
+F 1 "0603WAF4700T5E" H 7450 3375 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7450 3375 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf" H 7450 3375 50  0001 C CNN
+F 4 "C2317" H 7450 3375 50  0001 C CNN "LCSC Part #"
+	1    7450 3375
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors:0603WAF4700T5E R?
+U 1 1 5F6A2CC2
+P 7450 3475
+AR Path="/5E388B60/5F6A2CC2" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2CC2" Ref="R16"  Part="1" 
+AR Path="/5F852444/5F6A2CC2" Ref="R16"  Part="1" 
+F 0 "R16" V 7375 3150 50  0000 C CNN
+F 1 "0603WAF4700T5E" H 7450 3475 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7450 3475 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf" H 7450 3475 50  0001 C CNN
+F 4 "C2317" H 7450 3475 50  0001 C CNN "LCSC Part #"
+	1    7450 3475
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7400 3375 7550 3375
+Wire Wire Line
+	7400 3475 7550 3475
+NoConn ~ 6125 3475
+Wire Wire Line
+	6125 3675 5925 3675
+Wire Wire Line
+	6125 3775 5925 3775
+NoConn ~ 6925 3675
+NoConn ~ 6925 3775
+NoConn ~ 6925 3875
+NoConn ~ 6925 3975
+Wire Wire Line
+	6925 4075 7400 4075
+Wire Wire Line
+	6925 4175 7400 4175
+NoConn ~ 6125 3975
+NoConn ~ 6125 4175
+Wire Wire Line
+	6525 4375 6525 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A2CDA
+P 6525 4450
+AR Path="/5E388B60/5F6A2CDA" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2CDA" Ref="#PWR0111"  Part="1" 
+AR Path="/5F852444/5F6A2CDA" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 6525 4200 50  0001 C CNN
+F 1 "GND" H 6530 4277 50  0000 C CNN
+F 2 "" H 6525 4450 50  0001 C CNN
+F 3 "" H 6525 4450 50  0001 C CNN
+	1    6525 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_USB-DVI-HDMI-Connectors:10118193-0001LF J?
+U 1 1 5F6A2CE9
+P 4325 3775
+AR Path="/5E388B60/5F6A2CE9" Ref="J?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2CE9" Ref="J3"  Part="1" 
+AR Path="/5F852444/5F6A2CE9" Ref="J3"  Part="1" 
+F 0 "J3" H 4389 4520 60  0000 C CNN
+F 1 "10118193-0001LF" H 4389 4414 60  0000 C CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10118193-0001LF" H 4525 3975 60  0001 L CNN
+F 3 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf" H 4525 4075 60  0001 L CNN
+F 4 "609-4616-1-ND" H 4525 4175 60  0001 L CNN "Digi-Key_PN"
+F 5 "10118193-0001LF" H 4525 4275 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4525 4375 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 4525 4475 60  0001 L CNN "Family"
+F 8 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf" H 4525 4575 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-fci/10118193-0001LF/609-4616-1-ND/2785380" H 4525 4675 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 MICRO B SMD R/A" H 4525 4775 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (FCI)" H 4525 4875 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4525 4975 60  0001 L CNN "Status"
+	1    4325 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 3675 4800 3675
+Wire Wire Line
+	4625 3775 4800 3775
+NoConn ~ 4625 3875
+Wire Wire Line
+	4625 3975 4675 3975
+Wire Wire Line
+	4800 3975 4800 4075
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A2CF4
+P 4800 4075
+AR Path="/5E388B60/5F6A2CF4" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2CF4" Ref="#PWR0112"  Part="1" 
+AR Path="/5F852444/5F6A2CF4" Ref="#PWR0141"  Part="1" 
+F 0 "#PWR0141" H 4800 3825 50  0001 C CNN
+F 1 "GND" H 4805 3902 50  0000 C CNN
+F 2 "" H 4800 4075 50  0001 C CNN
+F 3 "" H 4800 4075 50  0001 C CNN
+	1    4800 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 3275 4925 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 5F6A2CFB
+P 4925 3200
+AR Path="/5E388B60/5F6A2CFB" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2CFB" Ref="#PWR0113"  Part="1" 
+AR Path="/5F852444/5F6A2CFB" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 4925 3050 50  0001 C CNN
+F 1 "+5V" H 4940 3373 50  0000 C CNN
+F 2 "" H 4925 3200 50  0001 C CNN
+F 3 "" H 4925 3200 50  0001 C CNN
+	1    4925 3200
+	1    0    0    -1  
+$EndComp
+Text Label 5925 3675 0    50   ~ 10
+D_P
+Text Label 4800 3775 2    50   ~ 10
+D_P
+Text Label 5925 3775 0    50   ~ 10
+D_N
+Text Label 4800 3675 2    50   ~ 10
+D_N
+$Comp
+L dk_Diodes-Rectifiers-Single:SS14 D?
+U 1 1 5F6A2D0F
+P 4925 3375
+AR Path="/5E388B60/5F6A2D0F" Ref="D?"  Part="1" 
+AR Path="/5E388A2A/5F6933BC/5F6A2D0F" Ref="D4"  Part="1" 
+AR Path="/5F852444/5F6A2D0F" Ref="D4"  Part="1" 
+F 0 "D4" V 4929 3463 50  0000 L CNN
+F 1 "SS14" V 5020 3463 50  0000 L CNN
+F 2 "digikey-footprints:DO-214AC" H 5125 3575 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/SS19-D.PDF" H 5125 3675 60  0001 L CNN
+F 4 "SS14CT-ND" H 5125 3775 60  0001 L CNN "Digi-Key_PN"
+F 5 "SS14" H 5125 3875 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5125 3975 60  0001 L CNN "Category"
+F 7 "Diodes - Rectifiers - Single" H 5125 4075 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/SS19-D.PDF" H 5125 4175 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/SS14/SS14CT-ND/965729" H 5125 4275 60  0001 L CNN "DK_Detail_Page"
+F 10 "DIODE SCHOTTKY 40V 1A SMA" H 5125 4375 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5125 4475 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5125 4575 60  0001 L CNN "Status"
+F 13 "C2480" V 4925 3375 50  0001 C CNN "LCSC Part #"
+	1    4925 3375
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4625 3575 4925 3575
+Connection ~ 4675 3975
+Wire Wire Line
+	4675 3975 4800 3975
+Wire Wire Line
+	4225 4375 4225 4450
+Wire Wire Line
+	4225 4450 4675 4450
+Wire Wire Line
+	4675 3975 4675 4450
+Text HLabel 7550 3375 2    50   Output ~ 0
+RX
+Text HLabel 7550 3475 2    50   Input ~ 0
+TX
+Text HLabel 7400 4075 2    50   Output ~ 0
+~DTR
+Text HLabel 7400 4175 2    50   Output ~ 0
+~RTS
+$EndSCHEMATC

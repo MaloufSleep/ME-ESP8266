@@ -1,0 +1,2080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/gramsejr/Projects/ESP8266/ESP8266.sch</source>
+    <date>Tuesday, April 14, 2020 at 10:24:30 AM</date>
+    <tool>Eeschema (5.1.0-0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ESP8266.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Controller/" tstamps="/5E388A2A/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Uart_to_RS232/" tstamps="/5E388A84/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Uart_to_RS232.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Power/" tstamps="/5E388AEA/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Power.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/USB_to_Serial/" tstamps="/5E388B60/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>USB_to_Serial.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U2">
+      <value>ESP8266EX</value>
+      <footprint>Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm_ThermalVias</footprint>
+      <datasheet>http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C77967</field>
+      </fields>
+      <libsource lib="MCU_Espressif" part="ESP8266EX" description="Highly integrated Wi-Fi SoC, QFN-32"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E388DBD</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>CL10A105KB8NNNC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</datasheet>
+      <fields>
+        <field name="LCSC Part #">C28323</field>
+        <field name="LCSC Part#">C15849</field>
+      </fields>
+      <libsource lib="Capacitors" part="CL10A105KB8NNNC" description="CAP CER 1uF 50V 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E393C93</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>CL10A105KB8NNNC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</datasheet>
+      <fields>
+        <field name="LCSC Part #">C28323</field>
+        <field name="LCSC Part#">C15849</field>
+      </fields>
+      <libsource lib="Capacitors" part="CL10A105KB8NNNC" description="CAP CER 1uF 50V 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E39587E</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>SDCL1005C4N3STDF</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Sunlord-SDCL1005C4N3STDF_C52051.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C52051</field>
+      </fields>
+      <libsource lib="Inductors" part="SDCL1005C4N3STDF" description="4.3NH ±0.3NH 300MA 0402 ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E399993</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>W25Q128JVSIQ</value>
+      <footprint>Package_SO:SO-8_5.3x6.2mm_P1.27mm</footprint>
+      <datasheet>https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C97521</field>
+      </fields>
+      <libsource lib="Memory_Flash" part="W25Q128JVSIQ" description="IC FLASH 128M SPI 133MHZ 8SOIC"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E4E5FD6</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>0603WAF1202T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F1202T5E_C17444.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C22790</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1202T5E" description="RES 12K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5398C3</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0603CG3R0C500NT</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0603CG3R0C500NT_C46219.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C46219</field>
+      </fields>
+      <libsource lib="Capacitors" part="0603CG3R0C500NT" description="CAP CER 3PF 50V 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E54404B</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0402CG2R7C500NT</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0603CG3R0C500NT_C46219.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C1561</field>
+      </fields>
+      <libsource lib="Capacitors" part="0402CG2R7C500NT" description="CAP CER 2.7PF 50V 0402"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E547BFC</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>LQG15HS2N2S02D</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Murata-Electronics-LQG15HS2N2S02D_C86061.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C86061</field>
+      </fields>
+      <libsource lib="Inductors" part="LQG15HS2N2S02D" description="2.2NH ±0.3NH 900MA 0402 ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E54A3BA</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>0603WAF2000T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F1202T5E_C17444.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C8218</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF2000T5E" description="RES 200 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5AFBEF</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5CDE59</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5CEB9E</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5CF027</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5CF4EF</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5CFA5F</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5D29CF</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5D3398</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>S8050_SMD</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-S8050_C2146.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2146</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="S8050_SMD" description="NPN 500MA 25V SOT-23-3 ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E60A7BA</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>S8050_SMD</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-S8050_C2146.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2146</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="S8050_SMD" description="NPN 500MA 25V SOT-23-3 ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E60C78F</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0603CG6R8C500NT</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</datasheet>
+      <fields>
+        <field name="LCSC Part #">C1679</field>
+      </fields>
+      <libsource lib="Capacitors" part="0603CG6R8C500NT" description="CAP CER 6.8pF 50V 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E621ACA</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0603CG6R8C500NT</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</datasheet>
+      <fields>
+        <field name="LCSC Part #">C1679</field>
+      </fields>
+      <libsource lib="Capacitors" part="0603CG6R8C500NT" description="CAP CER 6.8pF 50V 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E621FC0</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>TS-1187A-B-A-B</value>
+      <footprint>Button_Switch_SMD:TS-1187A-B-A-B</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1901111503_XKB-Enterprise-TS-1187A-B-A-B_C318884.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C318884</field>
+      </fields>
+      <libsource lib="Switch" part="TS-1187A-B-A-B" description="TACTILE SWITCHES SPST 5.10MM X 5.10MM 0.40MM 50MA @ 12VDC SMD ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E62E104</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>TS-1187A-B-A-B</value>
+      <footprint>Button_Switch_SMD:TS-1187A-B-A-B</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1901111503_XKB-Enterprise-TS-1187A-B-A-B_C318884.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C318884</field>
+      </fields>
+      <libsource lib="Switch" part="TS-1187A-B-A-B" description="TACTILE SWITCHES SPST 5.10MM X 5.10MM 0.40MM 50MA @ 12VDC SMD ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E632D33</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>0603WAF4700T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2317</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF4700T5E" description="RES 470 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E6393D6</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>0603WAF4700T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2317</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF4700T5E" description="RES 470 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E63A281</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>0603WAF620JT5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF620JT5E_C23222.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C23222</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF620JT5E" description="RES 62 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E4881E0</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>AO3400A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C20917</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3400A" description="MOSFET N TRENCH 30V 5.7A 1.5V @ 250UA 26.5 M? @ 5.7A,10V SOT-23-3L ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E4913DE</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>AO3400A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C20917</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3400A" description="MOSFET N TRENCH 30V 5.7A 1.5V @ 250UA 26.5 M? @ 5.7A,10V SOT-23-3L ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E49B514</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>0603WAF620JT5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF620JT5E_C23222.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C23222</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF620JT5E" description="RES 62 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E49B525</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>MT7403A-UR-A</value>
+      <footprint>digikey-footprints:LED_3mm_Radial</footprint>
+      <datasheet>http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf</datasheet>
+      <fields>
+        <field name="Category">Optoelectronics</field>
+        <field name="DK_Datasheet_Link">http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/marktech-optoelectronics/MT7403A-UR-A/1125-1181-ND/4214630</field>
+        <field name="Description">LED RED CLEAR 3.0MM ROUND T/H</field>
+        <field name="Digi-Key_PN">1125-1181-ND</field>
+        <field name="Family">LED Indication - Discrete</field>
+        <field name="MPN">MT7403A-UR-A</field>
+        <field name="Manufacturer">Marktech Optoelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_LED-Indication-Discrete" part="MT7403A-UR-A" description="LED RED CLEAR 3.0MM ROUND T/H"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E4C037B</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>MT7403A-UR-A</value>
+      <footprint>digikey-footprints:LED_3mm_Radial</footprint>
+      <datasheet>http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf</datasheet>
+      <fields>
+        <field name="Category">Optoelectronics</field>
+        <field name="DK_Datasheet_Link">http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/marktech-optoelectronics/MT7403A-UR-A/1125-1181-ND/4214630</field>
+        <field name="Description">LED RED CLEAR 3.0MM ROUND T/H</field>
+        <field name="Digi-Key_PN">1125-1181-ND</field>
+        <field name="Family">LED Indication - Discrete</field>
+        <field name="MPN">MT7403A-UR-A</field>
+        <field name="Manufacturer">Marktech Optoelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_LED-Indication-Discrete" part="MT7403A-UR-A" description="LED RED CLEAR 3.0MM ROUND T/H"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E4C21B5</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>MT7403A-UR-A</value>
+      <footprint>digikey-footprints:LED_3mm_Radial</footprint>
+      <datasheet>http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf</datasheet>
+      <fields>
+        <field name="Category">Optoelectronics</field>
+        <field name="DK_Datasheet_Link">http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/marktech-optoelectronics/MT7403A-UR-A/1125-1181-ND/4214630</field>
+        <field name="Description">LED RED CLEAR 3.0MM ROUND T/H</field>
+        <field name="Digi-Key_PN">1125-1181-ND</field>
+        <field name="Family">LED Indication - Discrete</field>
+        <field name="MPN">MT7403A-UR-A</field>
+        <field name="Manufacturer">Marktech Optoelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_LED-Indication-Discrete" part="MT7403A-UR-A" description="LED RED CLEAR 3.0MM ROUND T/H"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E4C2ECA</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>TAJB107K006RNJ</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/AVX-TAJB107K006RNJ_C16133.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C16133</field>
+      </fields>
+      <libsource lib="Capacitors" part="TAJB107K006RNJ" description="TANTALUM CAPACITORS 100UF 6.3V CASE-B_3528 ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E4E6541</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>CC0603KRX7R9BB104</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C14663</field>
+      </fields>
+      <libsource lib="Capacitors" part="CC0603KRX7R9BB104" description="CAP CER 100NF 50V 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5037DB</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>CC0603KRX7R9BB104</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C14663</field>
+      </fields>
+      <libsource lib="Capacitors" part="CC0603KRX7R9BB104" description="CAP CER 100NF 50V 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E503FF0</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>CL21A106KAYNNNE</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C15850</field>
+      </fields>
+      <libsource lib="Capacitors" part="CL21A106KAYNNNE" description="CAP CER 10UF 25V 0805"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E533E99</tstamp>
+    </comp>
+    <comp ref="K1">
+      <value>G5LE-1</value>
+      <footprint>Relay_THT:Relay_SPDT_Omron-G5LE-1</footprint>
+      <datasheet>http://www.omron.com/ecb/products/pdf/en-g5le.pdf</datasheet>
+      <libsource lib="Relay" part="G5LE-1" description="Omron G5LE relay, Miniature Single Pole, SPDT, 10A"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5F5368</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>AO3400A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C20917</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3400A" description="MOSFET N TRENCH 30V 5.7A 1.5V @ 250UA 26.5 M? @ 5.7A,10V SOT-23-3L ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E634861</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>0603WAF620JT5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF620JT5E_C23222.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C23222</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF620JT5E" description="RES 62 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E6E0D07</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>X1E000021081900</value>
+      <footprint>Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1901081604_Seiko-Epson-Q13FC1350000400_C32346.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C91747</field>
+      </fields>
+      <libsource lib="Oscillator" part="X1E000021081900" description="SMD CRYSTAL RESONATORS 26MHZ ±10PPM SMD-3225_4P ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E6CC4F1</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>68000-113HLF</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical</footprint>
+      <datasheet>http://suddendocs.samtec.com/catalog_english/ftsh_smt.pdf</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x13" description="Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E5631AE</tstamp>
+    </comp>
+    <comp ref="AE1">
+      <value>Antenna_Shield</value>
+      <footprint>RF_Antenna:Texas_SWRA117D_2.4GHz_Right</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Antenna_Shield" description="Antenna with extra pin for shielding"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E4E778E</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>AO3400A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C20917</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3400A" description="MOSFET N TRENCH 30V 5.7A 1.5V @ 250UA 26.5 M? @ 5.7A,10V SOT-23-3L ROHS"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E473530</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>VS1838B</value>
+      <footprint>OptoDevice:Vishay_MOLD-3Pin</footprint>
+      <datasheet>http://www.vishay.com/docs/82669/tsop32s40f.pdf</datasheet>
+      <libsource lib="Interface_Optical" part="VS1838B" description="IR Receiver Modules for Remote Control Systems"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E8DCF0B</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>0805W8F2203T5E</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2203T5E_C17556.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C17556</field>
+      </fields>
+      <libsource lib="Resistors" part="0805W8F2203T5E" description="RES SMD 220K OHM 1% 1/8W 0805"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E93C842</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>0805W8F8202T5E</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2203T5E_C17556.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C17840</field>
+      </fields>
+      <libsource lib="Resistors" part="0805W8F8202T5E" description="RES SMD 82k OHM 1% 1/8W 0805"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E949999</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E857EF8</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E90C578</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5E917FB1</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>0603WAF4700T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2317</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF4700T5E" description="RES 470 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5EA1428F</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>0603WAF4700T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2317</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF4700T5E" description="RES 470 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5EA2004F</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>0603WAF4700T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2317</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF4700T5E" description="RES 470 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5EA2C12D</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>0603WAF1002T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF1002T5E" description="RES 10K OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5EA69581</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>0603WAF4700T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2317</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF4700T5E" description="RES 470 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5EA8112C</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>GF1A</value>
+      <footprint>digikey-footprints:DO-214AC</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1812221030_ON-Semicon-ON-GF1A_C184687.pdf</datasheet>
+      <libsource lib="Diode" part="GF1A" description="DIODE GEN PURP 50V 1A SMA"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5EA138BF</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>284391-3</value>
+      <footprint>TerminalBlock_TE-Connectivity:TE_284391-3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="284391-3" description="screw terminal, single row, 01x03,"/>
+      <sheetpath names="/Controller/" tstamps="/5E388A2A/"/>
+      <tstamp>5EA46DA4</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>CC0603KRX7R9BB104</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C14663</field>
+      </fields>
+      <libsource lib="Capacitors" part="CC0603KRX7R9BB104" description="CAP CER 100NF 50V 0603"/>
+      <sheetpath names="/Uart_to_RS232/" tstamps="/5E388A84/"/>
+      <tstamp>5E518805</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MAX232ESE+T</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Maxim-Integrated-MAX232ESE-T_C26860.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C26860</field>
+      </fields>
+      <libsource lib="Interface_UART" part="MAX232ESE+T" description="RS232 2/2 116KBPS 5V SOIC-16_150MIL ROHS"/>
+      <sheetpath names="/Uart_to_RS232/" tstamps="/5E388A84/"/>
+      <tstamp>5E51CADC</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>282834-4</value>
+      <footprint>TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="282834-4" description="screw terminal, single row, 01x04, 2.54mm"/>
+      <sheetpath names="/Uart_to_RS232/" tstamps="/5E388A84/"/>
+      <tstamp>5E744E93</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>CL10A105KB8NNNC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</datasheet>
+      <fields>
+        <field name="LCSC Part #">C15849</field>
+      </fields>
+      <libsource lib="Capacitors" part="CL10A105KB8NNNC" description="CAP CER 1uF 50V 0603"/>
+      <sheetpath names="/Uart_to_RS232/" tstamps="/5E388A84/"/>
+      <tstamp>5E754077</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>CL10A105KB8NNNC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</datasheet>
+      <fields>
+        <field name="LCSC Part #">C15849</field>
+      </fields>
+      <libsource lib="Capacitors" part="CL10A105KB8NNNC" description="CAP CER 1uF 50V 0603"/>
+      <sheetpath names="/Uart_to_RS232/" tstamps="/5E388A84/"/>
+      <tstamp>5E75504A</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>CL10A105KB8NNNC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</datasheet>
+      <fields>
+        <field name="LCSC Part #">C15849</field>
+      </fields>
+      <libsource lib="Capacitors" part="CL10A105KB8NNNC" description="CAP CER 1uF 50V 0603"/>
+      <sheetpath names="/Uart_to_RS232/" tstamps="/5E388A84/"/>
+      <tstamp>5E755699</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>CL10A105KB8NNNC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</datasheet>
+      <fields>
+        <field name="LCSC Part #">C15849</field>
+      </fields>
+      <libsource lib="Capacitors" part="CL10A105KB8NNNC" description="CAP CER 1uF 50V 0603"/>
+      <sheetpath names="/Uart_to_RS232/" tstamps="/5E388A84/"/>
+      <tstamp>5E7564C1</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>68000-102HLF</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/68000.pdf</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Uart_to_RS232/" tstamps="/5E388A84/"/>
+      <tstamp>5E76305C</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>NCP1117-3.3_SOT223</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF</datasheet>
+      <fields>
+        <field name="LCSC Part #">C26537</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="NCP1117-3.3_SOT223" description="1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"/>
+      <sheetpath names="/Power/" tstamps="/5E388AEA/"/>
+      <tstamp>5E52F5B3</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>CL21A106KAYNNNE</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C15850</field>
+      </fields>
+      <libsource lib="Capacitors" part="CL21A106KAYNNNE" description="CAP CER 10UF 25V 0805"/>
+      <sheetpath names="/Power/" tstamps="/5E388AEA/"/>
+      <tstamp>5E53532E</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>CL21A106KAYNNNE</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C15850</field>
+      </fields>
+      <libsource lib="Capacitors" part="CL21A106KAYNNNE" description="CAP CER 10UF 25V 0805"/>
+      <sheetpath names="/Power/" tstamps="/5E388AEA/"/>
+      <tstamp>5E536829</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>CC0603KRX7R9BB104</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C14663</field>
+      </fields>
+      <libsource lib="Capacitors" part="CC0603KRX7R9BB104" description="CAP CER 100NF 50V 0603"/>
+      <sheetpath names="/USB_to_Serial/" tstamps="/5E388B60/"/>
+      <tstamp>5E54F2A7</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>CC0603KRX7R9BB104</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C14663</field>
+      </fields>
+      <libsource lib="Capacitors" part="CC0603KRX7R9BB104" description="CAP CER 100NF 50V 0603"/>
+      <sheetpath names="/USB_to_Serial/" tstamps="/5E388B60/"/>
+      <tstamp>5E5503DD</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>CH340C</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>http://www.datasheet5.com/pdf-local-2195953</datasheet>
+      <fields>
+        <field name="LCSC Part #">C84681</field>
+      </fields>
+      <libsource lib="Interface_USB" part="CH340C" description="USB serial converter, UART, SOIC-16"/>
+      <sheetpath names="/USB_to_Serial/" tstamps="/5E388B60/"/>
+      <tstamp>5E54E783</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>0603WAF4700T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2317</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF4700T5E" description="RES 470 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/USB_to_Serial/" tstamps="/5E388B60/"/>
+      <tstamp>5E552B91</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>0603WAF4700T5E</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part #">C2317</field>
+      </fields>
+      <libsource lib="Resistors" part="0603WAF4700T5E" description="RES 470 OHM 1% 1/10W 0603"/>
+      <sheetpath names="/USB_to_Serial/" tstamps="/5E388B60/"/>
+      <tstamp>5E5532F7</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>10118193-0001LF</value>
+      <footprint>digikey-footprints:USB_Micro_B_Female_10118193-0001LF</footprint>
+      <datasheet>http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf</datasheet>
+      <fields>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="DK_Datasheet_Link">http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/amphenol-icc-fci/10118193-0001LF/609-4616-1-ND/2785380</field>
+        <field name="Description">CONN RCPT USB2.0 MICRO B SMD R/A</field>
+        <field name="Digi-Key_PN">609-4616-1-ND</field>
+        <field name="Family">USB, DVI, HDMI Connectors</field>
+        <field name="MPN">10118193-0001LF</field>
+        <field name="Manufacturer">Amphenol ICC (FCI)</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_USB-DVI-HDMI-Connectors" part="10118193-0001LF" description="CONN RCPT USB2.0 MICRO B SMD R/A"/>
+      <sheetpath names="/USB_to_Serial/" tstamps="/5E388B60/"/>
+      <tstamp>5E55A961</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>SS14</value>
+      <footprint>digikey-footprints:DO-214AC</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/SS19-D.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/SS19-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/SS14/SS14CT-ND/965729</field>
+        <field name="Description">DIODE SCHOTTKY 40V 1A SMA</field>
+        <field name="Digi-Key_PN">SS14CT-ND</field>
+        <field name="Family">Diodes - Rectifiers - Single</field>
+        <field name="LCSC Part #">C2480</field>
+        <field name="MPN">SS14</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Diodes-Rectifiers-Single" part="SS14" description="DIODE SCHOTTKY 40V 1A SMA"/>
+      <sheetpath names="/USB_to_Serial/" tstamps="/5E388B60/"/>
+      <tstamp>5E56A91C</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Capacitors" part="0402CG2R7C500NT">
+      <description>CAP CER 2.7PF 50V 0402</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0603CG3R0C500NT_C46219.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">0402CG2R7C500NT</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="LCSC Part #">C1561</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Capacitors" part="0603CG3R0C500NT">
+      <description>CAP CER 3PF 50V 0603</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0603CG3R0C500NT_C46219.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">0603CG3R0C500NT</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="LCSC Part #">C46219</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Capacitors" part="0603CG6R8C500NT">
+      <description>CAP CER 6.8pF 50V 0603</description>
+      <docs>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">0603CG6R8C500NT</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="LCSC Part #">C1679</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Capacitors" part="CC0603KRX7R9BB104">
+      <description>CAP CER 100NF 50V 0603</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CC0603KRX7R9BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="LCSC Part #">C14663</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Capacitors" part="CL10A105KB8NNNC">
+      <description>CAP CER 1uF 50V 0603</description>
+      <docs>http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CL10A105KB8NNNC</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="LCSC Part#">C15849</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Capacitors" part="CL21A106KAYNNNE">
+      <description>CAP CER 10UF 25V 0805</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CL21A106KAYNNNE</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="LCSC Part #">C15850</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Capacitors" part="TAJB107K006RNJ">
+      <description>TANTALUM CAPACITORS 100UF 6.3V CASE-B_3528 ROHS</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/AVX-TAJB107K006RNJ_C16133.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">TAJB107K006RNJ</field>
+        <field name="Footprint">Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H</field>
+        <field name="LCSC Part #">C16133</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="282834-4">
+      <description>screw terminal, single row, 01x04, 2.54mm</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">282834-4</field>
+        <field name="Footprint">TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="284391-3">
+      <description>screw terminal, single row, 01x03,</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">284391-3</field>
+        <field name="Footprint">TerminalBlock_TE-Connectivity:TE_284391-3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x13">
+      <description>Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x13</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Antenna_Shield">
+      <description>Antenna with extra pin for shielding</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">AE</field>
+        <field name="Value">Antenna_Shield</field>
+        <field name="Footprint">RF_Antenna:Texas_SWRA117D_2.4GHz_Right</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="input"/>
+        <pin num="2" name="Shield" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="GF1A">
+      <aliases>
+        <alias>1N4002_copy_copy</alias>
+        <alias>1N4003_copy_copy</alias>
+        <alias>1N4004_copy_copy</alias>
+        <alias>1N4005_copy_copy</alias>
+        <alias>1N4006_copy_copy</alias>
+        <alias>1N4007_copy_copy</alias>
+        <alias>BA157_copy_copy</alias>
+        <alias>BA158_copy_copy</alias>
+        <alias>BA159_copy_copy</alias>
+      </aliases>
+      <description>DIODE GEN PURP 50V 1A SMA</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/1812221030_ON-Semicon-ON-GF1A_C184687.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">GF1A</field>
+        <field name="Footprint">digikey-footprints:DO-214AC</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="K" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Inductors" part="LQG15HS2N2S02D">
+      <description>2.2NH ±0.3NH 900MA 0402 ROHS</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Murata-Electronics-LQG15HS2N2S02D_C86061.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">LQG15HS2N2S02D</field>
+        <field name="Footprint">Inductor_SMD:L_0402_1005Metric</field>
+        <field name="LCSC Part #">C86061</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Inductors" part="SDCL1005C4N3STDF">
+      <description>4.3NH ±0.3NH 300MA 0402 ROHS</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Sunlord-SDCL1005C4N3STDF_C52051.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">SDCL1005C4N3STDF</field>
+        <field name="Footprint">Inductor_SMD:L_0402_1005Metric</field>
+        <field name="LCSC Part #">C52051</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_Optical" part="VS1838B">
+      <description>IR Receiver Modules for Remote Control Systems</description>
+      <docs>http://www.vishay.com/docs/82669/tsop32s40f.pdf</docs>
+      <footprints>
+        <fp>Vishay*MOLD*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">VS1838B</field>
+        <field name="Footprint">OptoDevice:Vishay_MOLD-3Pin</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="Vs" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_UART" part="MAX232ESE+T">
+      <description>RS232 2/2 116KBPS 5V SOIC-16_150MIL ROHS</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Maxim-Integrated-MAX232ESE-T_C26860.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX232ESE+T</field>
+        <field name="Footprint">Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</field>
+        <field name="LCSC Part #">C26860</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C1+" type="passive"/>
+        <pin num="2" name="V+" type="passive"/>
+        <pin num="3" name="C1-" type="passive"/>
+        <pin num="4" name="C2+" type="passive"/>
+        <pin num="5" name="C2-" type="passive"/>
+        <pin num="6" name="V-" type="passive"/>
+        <pin num="7" name="T2OUT" type="passive"/>
+        <pin num="8" name="R2IN" type="passive"/>
+        <pin num="9" name="R2OUT" type="passive"/>
+        <pin num="10" name="T2IN" type="passive"/>
+        <pin num="11" name="T1IN" type="passive"/>
+        <pin num="12" name="R1OUT" type="passive"/>
+        <pin num="13" name="R1IN" type="passive"/>
+        <pin num="14" name="T1OUT" type="passive"/>
+        <pin num="15" name="GND" type="passive"/>
+        <pin num="16" name="VCC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_USB" part="CH340C">
+      <description>USB serial converter, UART, SOIC-16</description>
+      <docs>http://www.datasheet5.com/pdf-local-2195953</docs>
+      <footprints>
+        <fp>SOIC*3.9x9.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CH340C</field>
+        <field name="Footprint">Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</field>
+        <field name="LCSC Part #">C84681</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="TXD" type="output"/>
+        <pin num="3" name="RXD" type="input"/>
+        <pin num="4" name="V3" type="passive"/>
+        <pin num="5" name="UD+" type="BiDi"/>
+        <pin num="6" name="UD-" type="BiDi"/>
+        <pin num="7" name="NC" type="input"/>
+        <pin num="8" name="NC" type="output"/>
+        <pin num="9" name="~CTS" type="input"/>
+        <pin num="10" name="~DSR" type="input"/>
+        <pin num="11" name="~RI" type="input"/>
+        <pin num="12" name="~DCD" type="input"/>
+        <pin num="13" name="~DTR" type="output"/>
+        <pin num="14" name="~RTS" type="output"/>
+        <pin num="15" name="R232" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Espressif" part="ESP8266EX">
+      <description>Highly integrated Wi-Fi SoC, QFN-32</description>
+      <docs>http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf</docs>
+      <footprints>
+        <fp>QFN*1EP*5x5mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP8266EX</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm</field>
+        <field name="LCSC Part #">C77967</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDDA" type="power_in"/>
+        <pin num="2" name="LNA" type="BiDi"/>
+        <pin num="3" name="VDD3P3" type="power_in"/>
+        <pin num="4" name="VDD3P3" type="power_in"/>
+        <pin num="5" name="VDD_RTC" type="power_in"/>
+        <pin num="6" name="TOUT" type="input"/>
+        <pin num="7" name="CHIP_PU" type="input"/>
+        <pin num="8" name="XPD_DCDC" type="BiDi"/>
+        <pin num="9" name="MTMS" type="BiDi"/>
+        <pin num="10" name="MTDI" type="BiDi"/>
+        <pin num="11" name="VDDPST" type="power_in"/>
+        <pin num="12" name="MTCK" type="BiDi"/>
+        <pin num="13" name="MTDO" type="BiDi"/>
+        <pin num="14" name="GPIO2" type="BiDi"/>
+        <pin num="15" name="GPIO0" type="BiDi"/>
+        <pin num="16" name="GPIO4" type="BiDi"/>
+        <pin num="17" name="VDDPST" type="power_in"/>
+        <pin num="18" name="SDIO_DATA_2" type="BiDi"/>
+        <pin num="19" name="SDIO_DATA_3" type="BiDi"/>
+        <pin num="20" name="SDIO_CMD" type="BiDi"/>
+        <pin num="21" name="SDIO_CLK" type="BiDi"/>
+        <pin num="22" name="SDIO_DATA_0" type="BiDi"/>
+        <pin num="23" name="SDIO_DATA_1" type="BiDi"/>
+        <pin num="24" name="GPIO5" type="BiDi"/>
+        <pin num="25" name="U0RXD" type="BiDi"/>
+        <pin num="26" name="U0TXD" type="BiDi"/>
+        <pin num="27" name="XTAL_OUT" type="BiDi"/>
+        <pin num="28" name="XTAL_IN" type="BiDi"/>
+        <pin num="29" name="VDDD" type="power_in"/>
+        <pin num="30" name="VDDA" type="power_in"/>
+        <pin num="31" name="RES12K" type="input"/>
+        <pin num="32" name="~EXT_RSTB~" type="input"/>
+        <pin num="33" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Memory_Flash" part="W25Q128JVSIQ">
+      <description>IC FLASH 128M SPI 133MHZ 8SOIC</description>
+      <docs>https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf</docs>
+      <footprints>
+        <fp>WSON*1EP*6x5mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">W25Q128JVSIQ</field>
+        <field name="Footprint">Package_SO:SO-8_5.3x6.2mm_P1.27mm</field>
+        <field name="LCSC Part #">C97521</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~CS" type="input"/>
+        <pin num="2" name="DO(IO1)" type="BiDi"/>
+        <pin num="3" name="~WP~(IO2)" type="BiDi"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="DI(IO0)" type="BiDi"/>
+        <pin num="6" name="CLK" type="input"/>
+        <pin num="7" name="~HOLD~(IO3)" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Oscillator" part="X1E000021081900">
+      <description>SMD CRYSTAL RESONATORS 26MHZ ±10PPM SMD-3225_4P ROHS</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/1901081604_Seiko-Epson-Q13FC1350000400_C32346.pdf</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">X1E000021081900</field>
+        <field name="Footprint">Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm</field>
+        <field name="LCSC Part #">C91747</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AP1117-15">
+      <aliases>
+        <alias>AP1117-18</alias>
+        <alias>AP1117-25</alias>
+        <alias>AP1117-33</alias>
+        <alias>AP1117-50</alias>
+        <alias>LD1117S33TR_SOT223</alias>
+        <alias>LD1117S12TR_SOT223</alias>
+        <alias>LD1117S18TR_SOT223</alias>
+        <alias>LD1117S25TR_SOT223</alias>
+        <alias>LD1117S50TR_SOT223</alias>
+        <alias>NCP1117-12_SOT223</alias>
+        <alias>NCP1117-1.5_SOT223</alias>
+        <alias>NCP1117-1.8_SOT223</alias>
+        <alias>NCP1117-2.0_SOT223</alias>
+        <alias>NCP1117-2.5_SOT223</alias>
+        <alias>NCP1117-2.85_SOT223</alias>
+        <alias>NCP1117-3.3_SOT223</alias>
+        <alias>NCP1117-5.0_SOT223</alias>
+        <alias>AMS1117-1.5</alias>
+        <alias>AMS1117-1.8</alias>
+        <alias>AMS1117-2.5</alias>
+        <alias>AMS1117-2.85</alias>
+        <alias>AMS1117-3.3</alias>
+        <alias>AMS1117-5.0</alias>
+      </aliases>
+      <description>1A Low Dropout regulator, positive, 1.5V fixed output, SOT-223</description>
+      <docs>http://www.diodes.com/datasheets/AP1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*TabPin2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP1117-15</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Relay" part="G5LE-1">
+      <description>Omron G5LE relay, Miniature Single Pole, SPDT, 10A</description>
+      <docs>http://www.omron.com/ecb/products/pdf/en-g5le.pdf</docs>
+      <footprints>
+        <fp>Relay*SPDT*Omron*G5LE?1*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">G5LE-1</field>
+        <field name="Footprint">Relay_THT:Relay_SPDT_Omron-G5LE-1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Resistors" part="0603WAF1002T5E">
+      <description>RES 10K OHM 1% 1/10W 0603</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0603WAF1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="LCSC Part #">C25804</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Resistors" part="0603WAF1202T5E">
+      <description>RES 12K OHM 1% 1/10W 0603</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F1202T5E_C17444.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0603WAF1202T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="LCSC Part #">C22790</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Resistors" part="0603WAF2000T5E">
+      <description>RES 200 OHM 1% 1/10W 0603</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F1202T5E_C17444.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0603WAF2000T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="LCSC Part #">C8218</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Resistors" part="0603WAF4700T5E">
+      <description>RES 470 OHM 1% 1/10W 0603</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0603WAF4700T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="LCSC Part #">C2317</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Resistors" part="0603WAF620JT5E">
+      <description>RES 62 OHM 1% 1/10W 0603</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF620JT5E_C23222.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0603WAF620JT5E</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="LCSC Part #">C23222</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Resistors" part="0805W8F2203T5E">
+      <description>RES SMD 220K OHM 1% 1/8W 0805</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2203T5E_C17556.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0805W8F2203T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="LCSC Part#">C17556</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Resistors" part="0805W8F8202T5E">
+      <description>RES SMD 82k OHM 1% 1/8W 0805</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2203T5E_C17556.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0805W8F8202T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="LCSC Part#">C17840</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="TS-1187A-B-A-B">
+      <description>TACTILE SWITCHES SPST 5.10MM X 5.10MM 0.40MM 50MA @ 12VDC SMD ROHS</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/1901111503_XKB-Enterprise-TS-1187A-B-A-B_C318884.pdf</docs>
+      <footprints>
+        <fp>SW4_1825910-B</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">TS-1187A-B-A-B</field>
+        <field name="Footprint">Button_Switch_THT:1825910-6</field>
+        <field name="LCSC Part #">C318884</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="unspc"/>
+        <pin num="2" name="2" type="unspc"/>
+        <pin num="3" name="3" type="unspc"/>
+        <pin num="4" name="4" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="S8050_SMD">
+      <description>NPN 500MA 25V SOT-23-3 ROHS</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-S8050_C2146.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">S8050_SMD</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="LCSC Part #">C2146</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="AO3400A">
+      <aliases>
+        <alias>TP0610L_copy</alias>
+        <alias>VP0610L_copy</alias>
+      </aliases>
+      <description>MOSFET N TRENCH 30V 5.7A 1.5V @ 250UA 26.5 M? @ 5.7A,10V SOT-23-3L ROHS</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">AO3400A</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="LCSC Part #">C20917</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Diodes-Rectifiers-Single" part="SS14">
+      <description>DIODE SCHOTTKY 40V 1A SMA</description>
+      <docs>https://www.onsemi.com/pub/Collateral/SS19-D.PDF</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SS14</field>
+        <field name="Footprint">digikey-footprints:DO-214AC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/SS19-D.PDF</field>
+        <field name="Digi-Key_PN">SS14CT-ND</field>
+        <field name="MPN">SS14</field>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="Family">Diodes - Rectifiers - Single</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/SS19-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/SS14/SS14CT-ND/965729</field>
+        <field name="Description">DIODE SCHOTTKY 40V 1A SMA</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="A" name="~" type="passive"/>
+        <pin num="K" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_LED-Indication-Discrete" part="MT7403A-UR-A">
+      <description>LED RED CLEAR 3.0MM ROUND T/H</description>
+      <docs>http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">MT7403A-UR-A</field>
+        <field name="Footprint">digikey-footprints:LED_3mm_Radial</field>
+        <field name="Datasheet">http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf</field>
+        <field name="Digi-Key_PN">1125-1181-ND</field>
+        <field name="MPN">MT7403A-UR-A</field>
+        <field name="Category">Optoelectronics</field>
+        <field name="Family">LED Indication - Discrete</field>
+        <field name="DK_Datasheet_Link">http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/marktech-optoelectronics/MT7403A-UR-A/1125-1181-ND/4214630</field>
+        <field name="Description">LED RED CLEAR 3.0MM ROUND T/H</field>
+        <field name="Manufacturer">Marktech Optoelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_USB-DVI-HDMI-Connectors" part="10118193-0001LF">
+      <description>CONN RCPT USB2.0 MICRO B SMD R/A</description>
+      <docs>http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">10118193-0001LF</field>
+        <field name="Footprint">digikey-footprints:USB_Micro_B_Female_10118193-0001LF</field>
+        <field name="Datasheet">http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf</field>
+        <field name="Digi-Key_PN">609-4616-1-ND</field>
+        <field name="MPN">10118193-0001LF</field>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="Family">USB, DVI, HDMI Connectors</field>
+        <field name="DK_Datasheet_Link">http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/amphenol-icc-fci/10118193-0001LF/609-4616-1-ND/2785380</field>
+        <field name="Description">CONN RCPT USB2.0 MICRO B SMD R/A</field>
+        <field name="Manufacturer">Amphenol ICC (FCI)</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="SH" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Capacitors">
+      <uri>/Library/Application Support/kicad/library/Capacitors.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/Library/Application Support/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/Library/Application Support/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/Library/Application Support/kicad/library/Diode.lib</uri>
+    </library>
+    <library logical="Inductors">
+      <uri>/Library/Application Support/kicad/library/Inductors.lib</uri>
+    </library>
+    <library logical="Interface_Optical">
+      <uri>/Library/Application Support/kicad/library/Interface_Optical.lib</uri>
+    </library>
+    <library logical="Interface_UART">
+      <uri>/Library/Application Support/kicad/library/Interface_UART.lib</uri>
+    </library>
+    <library logical="Interface_USB">
+      <uri>/Library/Application Support/kicad/library/Interface_USB.lib</uri>
+    </library>
+    <library logical="MCU_Espressif">
+      <uri>/Library/Application Support/kicad/library/MCU_Espressif.lib</uri>
+    </library>
+    <library logical="Memory_Flash">
+      <uri>/Library/Application Support/kicad/library/Memory_Flash.lib</uri>
+    </library>
+    <library logical="Oscillator">
+      <uri>/Library/Application Support/kicad/library/Oscillator.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/Library/Application Support/kicad/library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="Relay">
+      <uri>/Library/Application Support/kicad/library/Relay.lib</uri>
+    </library>
+    <library logical="Resistors">
+      <uri>/Library/Application Support/kicad/library/Resistors.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/Library/Application Support/kicad/library/Switch.lib</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>/Library/Application Support/kicad/library/Transistor_BJT.lib</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>/Library/Application Support/kicad/library/Transistor_FET.lib</uri>
+    </library>
+    <library logical="dk_Diodes-Rectifiers-Single">
+      <uri>/Users/gramsejr/Downloads/digikey-kicad-library-master/digikey-symbols/dk_Diodes-Rectifiers-Single.lib</uri>
+    </library>
+    <library logical="dk_LED-Indication-Discrete">
+      <uri>/Users/gramsejr/Downloads/digikey-kicad-library-master/digikey-symbols/dk_LED-Indication-Discrete.lib</uri>
+    </library>
+    <library logical="dk_USB-DVI-HDMI-Connectors">
+      <uri>/Users/gramsejr/Downloads/digikey-kicad-library-master/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Controller/GPIO12">
+      <node ref="J2" pin="4"/>
+      <node ref="U2" pin="10"/>
+      <node ref="U6" pin="1"/>
+    </net>
+    <net code="2" name="/Controller/IO_IR">
+      <node ref="U2" pin="12"/>
+      <node ref="R23" pin="2"/>
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="3" name="/Controller/IO_Gr">
+      <node ref="R22" pin="2"/>
+      <node ref="J2" pin="9"/>
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="4" name="/Controller/SD_D2">
+      <node ref="U1" pin="7"/>
+      <node ref="U2" pin="18"/>
+    </net>
+    <net code="5" name="/Controller/SD_D3">
+      <node ref="U1" pin="3"/>
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="6" name="/Controller/SD_CMD">
+      <node ref="U1" pin="1"/>
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="7" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="U2" pin="21"/>
+    </net>
+    <net code="8" name="/Controller/SD_D0">
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="22"/>
+    </net>
+    <net code="9" name="/Controller/SD_D1">
+      <node ref="U1" pin="5"/>
+      <node ref="U2" pin="23"/>
+    </net>
+    <net code="10" name="/Controller/IO_R">
+      <node ref="J2" pin="10"/>
+      <node ref="R21" pin="2"/>
+      <node ref="U2" pin="24"/>
+    </net>
+    <net code="11" name="RX">
+      <node ref="R15" pin="1"/>
+      <node ref="U2" pin="25"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="12" name="TX">
+      <node ref="R16" pin="1"/>
+      <node ref="U3" pin="11"/>
+      <node ref="U2" pin="26"/>
+    </net>
+    <net code="13" name="Net-(C10-Pad1)">
+      <node ref="X1" pin="1"/>
+      <node ref="U2" pin="28"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="14" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="31"/>
+    </net>
+    <net code="15" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="16" name="/Controller/TOUT">
+      <node ref="U2" pin="6"/>
+      <node ref="R17" pin="1"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="17" name="/Controller/GPIO16">
+      <node ref="U2" pin="8"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="18" name="/Controller/GPIO14">
+      <node ref="U2" pin="9"/>
+      <node ref="R19" pin="1"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="19" name="Net-(L1-Pad2)">
+      <node ref="U2" pin="4"/>
+      <node ref="U2" pin="3"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="20" name="+3V3">
+      <node ref="U2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C16" pin="1"/>
+      <node ref="U2" pin="11"/>
+      <node ref="U2" pin="17"/>
+      <node ref="C18" pin="1"/>
+      <node ref="C19" pin="2"/>
+      <node ref="U5" pin="16"/>
+      <node ref="U5" pin="4"/>
+      <node ref="U6" pin="3"/>
+      <node ref="U2" pin="29"/>
+      <node ref="U2" pin="30"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U1" pin="8"/>
+      <node ref="J2" pin="12"/>
+      <node ref="L1" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="21" name="/Controller/GPIO0">
+      <node ref="R14" pin="1"/>
+      <node ref="U2" pin="15"/>
+      <node ref="R2" pin="1"/>
+      <node ref="Q5" pin="3"/>
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="22" name="/Controller/GPIO2">
+      <node ref="U2" pin="14"/>
+      <node ref="J2" pin="7"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="23" name="/Controller/EN">
+      <node ref="U2" pin="7"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="24" name="/Controller/GPIO15">
+      <node ref="J2" pin="6"/>
+      <node ref="U2" pin="13"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="25" name="Net-(C9-Pad2)">
+      <node ref="C9" pin="2"/>
+      <node ref="U2" pin="27"/>
+      <node ref="X1" pin="3"/>
+    </net>
+    <net code="26" name="/Controller/~RST">
+      <node ref="R8" pin="1"/>
+      <node ref="Q4" pin="3"/>
+      <node ref="C8" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U2" pin="32"/>
+    </net>
+    <net code="27" name="GND">
+      <node ref="J3" pin="SH"/>
+      <node ref="J3" pin="5"/>
+      <node ref="U2" pin="33"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="SW2" pin="4"/>
+      <node ref="SW2" pin="3"/>
+      <node ref="U5" pin="1"/>
+      <node ref="SW1" pin="4"/>
+      <node ref="SW1" pin="3"/>
+      <node ref="C19" pin="1"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="U4" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="X1" pin="2"/>
+      <node ref="X1" pin="4"/>
+      <node ref="U3" pin="15"/>
+      <node ref="R7" pin="2"/>
+      <node ref="J2" pin="13"/>
+      <node ref="C11" pin="2"/>
+      <node ref="AE1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R20" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="U6" pin="2"/>
+      <node ref="R18" pin="1"/>
+      <node ref="R26" pin="1"/>
+      <node ref="R24" pin="1"/>
+      <node ref="R25" pin="1"/>
+    </net>
+    <net code="28" name="/Controller/ANT">
+      <node ref="C6" pin="2"/>
+      <node ref="L2" pin="2"/>
+      <node ref="AE1" pin="1"/>
+    </net>
+    <net code="29" name="/Controller/LNA">
+      <node ref="C7" pin="2"/>
+      <node ref="L2" pin="1"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="30" name="/Controller/SD_CLK">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="31" name="~DTR">
+      <node ref="Q5" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="U5" pin="13"/>
+    </net>
+    <net code="32" name="Net-(Q4-Pad1)">
+      <node ref="Q4" pin="1"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="33" name="~RTS">
+      <node ref="R13" pin="1"/>
+      <node ref="U5" pin="14"/>
+      <node ref="Q4" pin="2"/>
+    </net>
+    <net code="34" name="Net-(Q5-Pad1)">
+      <node ref="R13" pin="2"/>
+      <node ref="Q5" pin="1"/>
+    </net>
+    <net code="35" name="Net-(R8-Pad2)">
+      <node ref="SW1" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="36" name="Net-(R14-Pad2)">
+      <node ref="SW2" pin="1"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="37" name="Net-(Q3-Pad3)">
+      <node ref="R11" pin="2"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="38" name="+5V">
+      <node ref="C11" pin="1"/>
+      <node ref="D5" pin="K"/>
+      <node ref="J2" pin="11"/>
+      <node ref="J1" pin="4"/>
+      <node ref="D3" pin="1"/>
+      <node ref="U3" pin="16"/>
+      <node ref="D2" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="K1" pin="5"/>
+      <node ref="C17" pin="1"/>
+      <node ref="U4" pin="3"/>
+      <node ref="C12" pin="2"/>
+      <node ref="D4" pin="K"/>
+    </net>
+    <net code="39" name="Net-(D1-Pad2)">
+      <node ref="R9" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="40" name="Net-(D3-Pad2)">
+      <node ref="R11" pin="1"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="41" name="/Controller/COM">
+      <node ref="K1" pin="1"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="42" name="/Controller/NC">
+      <node ref="K1" pin="4"/>
+      <node ref="J5" pin="3"/>
+    </net>
+    <net code="43" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="44" name="Net-(Q2-Pad3)">
+      <node ref="Q2" pin="3"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="45" name="Net-(Q1-Pad3)">
+      <node ref="R9" pin="2"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="46" name="/Controller/TOUT_EX">
+      <node ref="J2" pin="1"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="47" name="Net-(Q3-Pad1)">
+      <node ref="R26" pin="2"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="R23" pin="1"/>
+    </net>
+    <net code="48" name="Net-(Q2-Pad1)">
+      <node ref="R25" pin="2"/>
+      <node ref="R22" pin="1"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="49" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="50" name="Net-(Q6-Pad1)">
+      <node ref="Q6" pin="1"/>
+      <node ref="R20" pin="2"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="51" name="Net-(D5-PadA)">
+      <node ref="D5" pin="A"/>
+      <node ref="Q6" pin="3"/>
+      <node ref="K1" pin="2"/>
+    </net>
+    <net code="52" name="/Controller/NO">
+      <node ref="K1" pin="3"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="53" name="Net-(C13-Pad1)">
+      <node ref="U3" pin="1"/>
+      <node ref="C13" pin="1"/>
+    </net>
+    <net code="54" name="Net-(U3-Pad10)">
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="55" name="Net-(J4-Pad1)">
+      <node ref="U3" pin="12"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="56" name="Net-(C15-Pad2)">
+      <node ref="C15" pin="2"/>
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="57" name="Net-(U3-Pad7)">
+      <node ref="U3" pin="7"/>
+    </net>
+    <net code="58" name="Net-(U3-Pad8)">
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="59" name="Net-(U3-Pad9)">
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="60" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="61" name="/Uart_to_RS232/TX_RS232">
+      <node ref="J1" pin="3"/>
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="62" name="Net-(C13-Pad2)">
+      <node ref="C13" pin="2"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="63" name="Net-(C14-Pad1)">
+      <node ref="U3" pin="4"/>
+      <node ref="C14" pin="1"/>
+    </net>
+    <net code="64" name="Net-(C14-Pad2)">
+      <node ref="U3" pin="5"/>
+      <node ref="C14" pin="2"/>
+    </net>
+    <net code="65" name="/Uart_to_RS232/RX_RS232">
+      <node ref="J1" pin="2"/>
+      <node ref="U3" pin="13"/>
+    </net>
+    <net code="66" name="Net-(U5-Pad10)">
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="67" name="Net-(U5-Pad11)">
+      <node ref="U5" pin="11"/>
+    </net>
+    <net code="68" name="Net-(U5-Pad12)">
+      <node ref="U5" pin="12"/>
+    </net>
+    <net code="69" name="Net-(U5-Pad15)">
+      <node ref="U5" pin="15"/>
+    </net>
+    <net code="70" name="Net-(R15-Pad2)">
+      <node ref="R15" pin="2"/>
+      <node ref="U5" pin="2"/>
+    </net>
+    <net code="71" name="Net-(R16-Pad2)">
+      <node ref="R16" pin="2"/>
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="72" name="/USB_to_Serial/D_P">
+      <node ref="J3" pin="3"/>
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="73" name="/USB_to_Serial/D_N">
+      <node ref="U5" pin="6"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="74" name="Net-(U5-Pad7)">
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="75" name="Net-(U5-Pad8)">
+      <node ref="U5" pin="8"/>
+    </net>
+    <net code="76" name="Net-(U5-Pad9)">
+      <node ref="U5" pin="9"/>
+    </net>
+    <net code="77" name="Net-(J3-Pad4)">
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="78" name="Net-(D4-PadA)">
+      <node ref="J3" pin="1"/>
+      <node ref="D4" pin="A"/>
+    </net>
+  </nets>
+</export>

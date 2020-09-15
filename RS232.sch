@@ -1,0 +1,304 @@
+EESchema Schematic File Version 4
+LIBS:ESP8266-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "ESP8266 WiFi "
+Date "2020-06-15"
+Rev "002"
+Comp "Malouf"
+Comment1 "Engineer: Jason Gramse"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5325 2675 5000 2675
+Wire Wire Line
+	5000 2675 5000 2525
+$Comp
+L power:+5V #PWR?
+U 1 1 5F63E52F
+P 5000 2525
+AR Path="/5E388A84/5F63E52F" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E52F" Ref="#PWR0101"  Part="1" 
+AR Path="/5F85244C/5F63E52F" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H 5000 2375 50  0001 C CNN
+F 1 "+5V" H 5015 2698 50  0000 C CNN
+F 2 "" H 5000 2525 50  0001 C CNN
+F 3 "" H 5000 2525 50  0001 C CNN
+	1    5000 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:CC0603KRX7R9BB104 C?
+U 1 1 5F63E536
+P 5000 2575
+AR Path="/5E388A84/5F63E536" Ref="C?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E536" Ref="C11"  Part="1" 
+AR Path="/5F85244C/5F63E536" Ref="C11"  Part="1" 
+F 0 "C11" H 5115 2325 50  0000 L CNN
+F 1 "CC0603KRX7R9BB104" H 5000 2525 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5000 2625 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5000 2625 50  0001 C CNN
+F 4 "C14663" H 5000 2575 50  0001 C CNN "LCSC Part #"
+	1    5000 2575
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 2675
+Connection ~ 5325 2675
+$Comp
+L Interface_UART:MAX232ESE+T U?
+U 1 1 5F63E53F
+P 5325 3750
+AR Path="/5E388A84/5F63E53F" Ref="U?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E53F" Ref="U3"  Part="1" 
+AR Path="/5F85244C/5F63E53F" Ref="U3"  Part="1" 
+F 0 "U3" H 5425 4250 50  0000 C CNN
+F 1 "MAX232ESE+T" H 5000 4250 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5375 4200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Maxim-Integrated-MAX232ESE-T_C26860.pdf" H 5375 4200 50  0001 C CNN
+F 4 "C26860" H 5325 3750 50  0001 C CNN "LCSC Part #"
+	1    5325 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F63E545
+P 5000 2975
+AR Path="/5E388A84/5F63E545" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E545" Ref="#PWR0102"  Part="1" 
+AR Path="/5F85244C/5F63E545" Ref="#PWR0144"  Part="1" 
+F 0 "#PWR0144" H 5000 2725 50  0001 C CNN
+F 1 "GND" H 5005 2802 50  0000 C CNN
+F 2 "" H 5000 2975 50  0001 C CNN
+F 3 "" H 5000 2975 50  0001 C CNN
+	1    5000 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5325 2675 5325 3200
+Wire Wire Line
+	5325 2675 5850 2675
+Wire Wire Line
+	5850 2975 5850 3450
+Wire Wire Line
+	5850 3450 5775 3450
+Wire Wire Line
+	5775 3600 6025 3600
+Wire Wire Line
+	6325 3600 6425 3600
+Wire Wire Line
+	6425 3600 6425 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5F63E552
+P 6425 3650
+AR Path="/5E388A84/5F63E552" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E552" Ref="#PWR0103"  Part="1" 
+AR Path="/5F85244C/5F63E552" Ref="#PWR0145"  Part="1" 
+F 0 "#PWR0145" H 6425 3400 50  0001 C CNN
+F 1 "GND" H 6430 3477 50  0000 C CNN
+F 2 "" H 6425 3650 50  0001 C CNN
+F 3 "" H 6425 3650 50  0001 C CNN
+	1    6425 3650
+	1    0    0    -1  
+$EndComp
+Text Label 6775 4000 2    50   ~ 10
+TX_RS232
+Text Label 6775 4200 2    50   ~ 10
+RX_RS232
+NoConn ~ 5775 4100
+NoConn ~ 5775 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5F63E55C
+P 5325 4500
+AR Path="/5E388A84/5F63E55C" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E55C" Ref="#PWR0104"  Part="1" 
+AR Path="/5F85244C/5F63E55C" Ref="#PWR0146"  Part="1" 
+F 0 "#PWR0146" H 5325 4250 50  0001 C CNN
+F 1 "GND" H 5330 4327 50  0000 C CNN
+F 2 "" H 5325 4500 50  0001 C CNN
+F 3 "" H 5325 4500 50  0001 C CNN
+	1    5325 4500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4875 4100
+NoConn ~ 4875 4300
+Wire Wire Line
+	4875 4000 3875 4000
+Wire Wire Line
+	4250 4200 4875 4200
+Wire Wire Line
+	4875 3400 4550 3400
+Wire Wire Line
+	4550 3400 4550 3275
+Wire Wire Line
+	4550 3275 4375 3275
+Wire Wire Line
+	4375 3275 4375 3325
+Wire Wire Line
+	4375 3625 4375 3675
+Wire Wire Line
+	4375 3675 4550 3675
+Wire Wire Line
+	4550 3675 4550 3550
+Wire Wire Line
+	4550 3550 4875 3550
+Wire Wire Line
+	4625 3625 4625 3600
+Wire Wire Line
+	4625 3600 4750 3600
+Wire Wire Line
+	4750 3600 4750 3700
+Wire Wire Line
+	4750 3700 4875 3700
+Wire Wire Line
+	4625 3925 4625 3950
+Wire Wire Line
+	4625 3950 4750 3950
+Wire Wire Line
+	4750 3950 4750 3850
+Wire Wire Line
+	4750 3850 4875 3850
+Wire Wire Line
+	5775 4000 7100 4000
+Wire Wire Line
+	7000 4200 7000 4100
+Wire Wire Line
+	7000 4100 7100 4100
+Wire Wire Line
+	5775 4200 7000 4200
+$Comp
+L Connector:282834-4 J?
+U 1 1 5F63E57C
+P 7300 4100
+AR Path="/5E388A84/5F63E57C" Ref="J?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E57C" Ref="J1"  Part="1" 
+AR Path="/5F85244C/5F63E57C" Ref="J1"  Part="1" 
+F 0 "J1" H 7218 3675 50  0000 C CNN
+F 1 "282834-4" H 7218 3766 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 7300 4100 50  0001 C CNN
+F 3 "~" H 7300 4100 50  0001 C CNN
+	1    7300 4100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7100 3900 7000 3900
+Wire Wire Line
+	7000 3900 7000 3750
+$Comp
+L power:+5V #PWR?
+U 1 1 5F63E584
+P 7000 3750
+AR Path="/5E388A84/5F63E584" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E584" Ref="#PWR0116"  Part="1" 
+AR Path="/5F85244C/5F63E584" Ref="#PWR0147"  Part="1" 
+F 0 "#PWR0147" H 7000 3600 50  0001 C CNN
+F 1 "+5V" H 7015 3923 50  0000 C CNN
+F 2 "" H 7000 3750 50  0001 C CNN
+F 3 "" H 7000 3750 50  0001 C CNN
+	1    7000 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4200 7100 4325
+$Comp
+L power:GND #PWR?
+U 1 1 5F63E58B
+P 7100 4325
+AR Path="/5E388A84/5F63E58B" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E58B" Ref="#PWR0117"  Part="1" 
+AR Path="/5F85244C/5F63E58B" Ref="#PWR0148"  Part="1" 
+F 0 "#PWR0148" H 7100 4075 50  0001 C CNN
+F 1 "GND" H 7105 4152 50  0000 C CNN
+F 2 "" H 7100 4325 50  0001 C CNN
+F 3 "" H 7100 4325 50  0001 C CNN
+	1    7100 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:CL10A105KB8NNNC C?
+U 1 1 5F63E592
+P 4375 3225
+AR Path="/5E388A84/5F63E592" Ref="C?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E592" Ref="C13"  Part="1" 
+AR Path="/5F85244C/5F63E592" Ref="C13"  Part="1" 
+F 0 "C13" H 4490 2975 50  0000 L CNN
+F 1 "CL10A105KB8NNNC" H 4375 3175 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4375 3275 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp" H 4375 3275 50  0001 C CNN
+F 4 "C15849" H 4375 3225 50  0001 C CNN "LCSC Part #"
+	1    4375 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:CL10A105KB8NNNC C?
+U 1 1 5F63E599
+P 4625 3525
+AR Path="/5E388A84/5F63E599" Ref="C?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E599" Ref="C14"  Part="1" 
+AR Path="/5F85244C/5F63E599" Ref="C14"  Part="1" 
+F 0 "C14" H 4740 3275 50  0000 L CNN
+F 1 "CL10A105KB8NNNC" H 4625 3475 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4625 3575 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp" H 4625 3575 50  0001 C CNN
+F 4 "C15849" H 4625 3525 50  0001 C CNN "LCSC Part #"
+	1    4625 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:CL10A105KB8NNNC C?
+U 1 1 5F63E5A0
+P 6425 3600
+AR Path="/5E388A84/5F63E5A0" Ref="C?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E5A0" Ref="C15"  Part="1" 
+AR Path="/5F85244C/5F63E5A0" Ref="C15"  Part="1" 
+F 0 "C15" V 6193 3350 50  0000 C CNN
+F 1 "CL10A105KB8NNNC" H 6425 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6425 3650 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp" H 6425 3650 50  0001 C CNN
+F 4 "C15849" H 6425 3600 50  0001 C CNN "LCSC Part #"
+	1    6425 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitors:CL10A105KB8NNNC C?
+U 1 1 5F63E5A7
+P 5850 3075
+AR Path="/5E388A84/5F63E5A7" Ref="C?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E5A7" Ref="C12"  Part="1" 
+AR Path="/5F85244C/5F63E5A7" Ref="C12"  Part="1" 
+F 0 "C12" H 5664 2825 50  0000 R CNN
+F 1 "CL10A105KB8NNNC" H 5850 3025 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5850 3125 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475MP5LNNC.jsp" H 5850 3125 50  0001 C CNN
+F 4 "C15849" H 5850 3075 50  0001 C CNN "LCSC Part #"
+	1    5850 3075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F63E5AD
+P 4250 4400
+AR Path="/5E388A2A/5F63E5AD" Ref="J?"  Part="1" 
+AR Path="/5E388A84/5F63E5AD" Ref="J?"  Part="1" 
+AR Path="/5E388A2A/5F613B94/5F63E5AD" Ref="J4"  Part="1" 
+AR Path="/5F85244C/5F63E5AD" Ref="J4"  Part="1" 
+F 0 "J4" V 4122 4480 50  0000 L CNN
+F 1 "68000-102HLF" V 4213 4480 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4250 4400 50  0001 C CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/68000.pdf" H 4250 4400 50  0001 C CNN
+	1    4250 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 4200 3875 4200
+Text HLabel 3875 4200 0    50   Output ~ 0
+RX
+Text HLabel 3875 4000 0    50   Input ~ 0
+TX
+$EndSCHEMATC

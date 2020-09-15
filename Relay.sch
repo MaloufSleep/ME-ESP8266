@@ -1,0 +1,196 @@
+EESchema Schematic File Version 4
+LIBS:ESP8266-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "ESP8266 WiFi "
+Date "2020-06-15"
+Rev "002"
+Comp "Malouf"
+Comment1 "Engineer: Jason Gramse"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:G5LE-1 K?
+U 1 1 5F53F1F9
+P 5450 3600
+AR Path="/5E388A2A/5F53F1F9" Ref="K?"  Part="1" 
+AR Path="/5E388A2A/5F51D2D1/5F53F1F9" Ref="K1"  Part="1" 
+AR Path="/5F852426/5F53F1F9" Ref="K1"  Part="1" 
+F 0 "K1" V 4883 3600 50  0000 C CNN
+F 1 "G5LE-1" V 4974 3600 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 5900 3550 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5450 3200 50  0001 C CNN
+	1    5450 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 3800 6675 3800
+Wire Wire Line
+	5150 3800 4900 3800
+$Comp
+L Transistor_FET:AO3400A Q?
+U 1 1 5F53F202
+P 4500 3625
+AR Path="/5E388A2A/5F53F202" Ref="Q?"  Part="1" 
+AR Path="/5E388A2A/5F51D2D1/5F53F202" Ref="Q6"  Part="1" 
+AR Path="/5F852426/5F53F202" Ref="Q6"  Part="1" 
+F 0 "Q6" H 4706 3671 50  0000 L CNN
+F 1 "AO3400A" H 4706 3580 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 3550 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf" H 4500 3625 50  0001 L CNN
+F 4 "C20917" H 4500 3625 50  0001 C CNN "LCSC Part #"
+	1    4500 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F53F208
+P 6125 3150
+AR Path="/5E388A2A/5F53F208" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F51D2D1/5F53F208" Ref="#PWR0114"  Part="1" 
+AR Path="/5F852426/5F53F208" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 6125 3000 50  0001 C CNN
+F 1 "+5V" H 6140 3323 50  0000 C CNN
+F 2 "" H 6125 3150 50  0001 C CNN
+F 3 "" H 6125 3150 50  0001 C CNN
+	1    6125 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3625 4275 3625
+Wire Wire Line
+	6125 3400 5800 3400
+Text Label 6675 3800 0    50   ~ 10
+COM
+Text Label 6500 3700 0    50   ~ 10
+NC
+Text Label 6500 3900 0    50   ~ 10
+NO
+Wire Wire Line
+	5750 3700 6900 3700
+$Comp
+L Resistors:0603WAF1002T5E R?
+U 1 1 5F53F215
+P 4275 4075
+AR Path="/5E388A2A/5F53F215" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F51D2D1/5F53F215" Ref="R20"  Part="1" 
+AR Path="/5F852426/5F53F215" Ref="R20"  Part="1" 
+F 0 "R20" V 4050 3875 50  0000 C CNN
+F 1 "0603WAF1002T5E" H 4275 4075 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4275 4075 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 4275 4075 50  0001 C CNN
+F 4 "C25804" H 4275 4075 50  0001 C CNN "LCSC Part #"
+	1    4275 4075
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4275 4025 4275 4050
+Wire Wire Line
+	4275 3725 4275 3625
+$Comp
+L Resistors:0603WAF4700T5E R?
+U 1 1 5F53F21E
+P 3900 3625
+AR Path="/5E388A2A/5F53F21E" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F51D2D1/5F53F21E" Ref="R19"  Part="1" 
+AR Path="/5F852426/5F53F21E" Ref="R19"  Part="1" 
+F 0 "R19" V 3675 3450 50  0000 C CNN
+F 1 "0603WAF4700T5E" H 3900 3625 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 3625 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf" H 3900 3625 50  0001 C CNN
+F 4 "C23179" H 3900 3625 50  0001 C CNN "LCSC Part #"
+	1    3900 3625
+	0    -1   1    0   
+$EndComp
+Connection ~ 4275 3625
+Wire Wire Line
+	4275 3625 4250 3625
+$Comp
+L power:GND #PWR?
+U 1 1 5F53F226
+P 4425 4075
+AR Path="/5E388A2A/5F53F226" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F51D2D1/5F53F226" Ref="#PWR0115"  Part="1" 
+AR Path="/5F852426/5F53F226" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 4425 3825 50  0001 C CNN
+F 1 "GND" H 4475 3875 50  0000 C CNN
+F 2 "" H 4425 4075 50  0001 C CNN
+F 3 "" H 4425 4075 50  0001 C CNN
+	1    4425 4075
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 3150 6125 3400
+Wire Wire Line
+	4600 4050 4600 3825
+Wire Wire Line
+	4275 4050 4425 4050
+Wire Wire Line
+	4600 3425 4600 3400
+Wire Wire Line
+	4600 3400 5100 3400
+Wire Wire Line
+	4425 4075 4425 4050
+Connection ~ 4425 4050
+Wire Wire Line
+	4425 4050 4600 4050
+Wire Wire Line
+	4900 3800 4900 4100
+Wire Wire Line
+	4900 4100 6675 4100
+$Comp
+L Diode:GF1A D?
+U 1 1 5F53F236
+P 5450 2925
+AR Path="/5E388A2A/5F53F236" Ref="D?"  Part="1" 
+AR Path="/5E388A2A/5F51D2D1/5F53F236" Ref="D5"  Part="1" 
+AR Path="/5F852426/5F53F236" Ref="D5"  Part="1" 
+F 0 "D5" H 5450 2709 50  0000 C CNN
+F 1 "GF1A" H 5450 2800 50  0000 C CNN
+F 2 "digikey-footprints:DO-214AC" H 5450 2750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1812221030_ON-Semicon-ON-GF1A_C184687.pdf" H 5450 2925 50  0001 C CNN
+	1    5450 2925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2925 5800 2925
+Wire Wire Line
+	5800 2925 5800 3400
+Connection ~ 5800 3400
+Wire Wire Line
+	5800 3400 5750 3400
+Wire Wire Line
+	5300 2925 5100 2925
+Wire Wire Line
+	5100 2925 5100 3400
+Connection ~ 5100 3400
+Wire Wire Line
+	5100 3400 5150 3400
+$Comp
+L Connector:284391-3 J?
+U 1 1 5F53F244
+P 7100 3800
+AR Path="/5E388A2A/5F53F244" Ref="J?"  Part="1" 
+AR Path="/5E388A2A/5F51D2D1/5F53F244" Ref="J5"  Part="1" 
+AR Path="/5F852426/5F53F244" Ref="J5"  Part="1" 
+F 0 "J5" H 7018 3475 50  0000 C CNN
+F 1 "284391-3" H 7018 3566 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TE_284391-3" H 7100 3800 50  0001 C CNN
+F 3 "~" H 7100 3800 50  0001 C CNN
+	1    7100 3800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5750 3900 6900 3900
+Wire Wire Line
+	6675 3800 6675 4100
+Text HLabel 3800 3625 0    50   Input ~ 0
+COIL
+Wire Wire Line
+	3950 3625 3800 3625
+$EndSCHEMATC

@@ -1,0 +1,428 @@
+EESchema Schematic File Version 4
+LIBS:ESP8266-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "ESP8266 WiFi "
+Date "2020-06-15"
+Rev "002"
+Comp "Malouf"
+Comment1 "Engineer: Jason Gramse"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR?
+U 1 1 5F5E557E
+P 4025 2500
+AR Path="/5E388A2A/5F5E557E" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E557E" Ref="#PWR0126"  Part="1" 
+AR Path="/5F85242D/5F5E557E" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 4025 2350 50  0001 C CNN
+F 1 "+5V" H 4040 2673 50  0000 C CNN
+F 2 "" H 4025 2500 50  0001 C CNN
+F 3 "" H 4025 2500 50  0001 C CNN
+	1    4025 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:0603WAF620JT5E R?
+U 1 1 5F5E5585
+P 4025 2950
+AR Path="/5E388A2A/5F5E5585" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E5585" Ref="R9"  Part="1" 
+AR Path="/5F85242D/5F5E5585" Ref="R9"  Part="1" 
+F 0 "R9" H 4078 2750 50  0000 L CNN
+F 1 "0603WAF620JT5E" H 4025 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4025 2950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF620JT5E_C23222.pdf" H 4025 2950 50  0001 C CNN
+F 4 "C23222" H 4025 2950 50  0001 C CNN "LCSC Part #"
+	1    4025 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5E558B
+P 4025 4225
+AR Path="/5E388A2A/5F5E558B" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E558B" Ref="#PWR0127"  Part="1" 
+AR Path="/5F85242D/5F5E558B" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 4025 3975 50  0001 C CNN
+F 1 "GND" H 4030 4052 50  0000 C CNN
+F 2 "" H 4025 4225 50  0001 C CNN
+F 3 "" H 4025 4225 50  0001 C CNN
+	1    4025 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3400A Q?
+U 1 1 5F5E5592
+P 6025 3575
+AR Path="/5E388A2A/5F5E5592" Ref="Q?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E5592" Ref="Q2"  Part="1" 
+AR Path="/5F85242D/5F5E5592" Ref="Q2"  Part="1" 
+F 0 "Q2" H 6231 3621 50  0000 L CNN
+F 1 "AO3400A" H 6231 3530 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6225 3500 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf" H 6025 3575 50  0001 L CNN
+F 4 "C20917" H 6025 3575 50  0001 C CNN "LCSC Part #"
+	1    6025 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F5E5598
+P 6125 2525
+AR Path="/5E388A2A/5F5E5598" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E5598" Ref="#PWR0128"  Part="1" 
+AR Path="/5F85242D/5F5E5598" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 6125 2375 50  0001 C CNN
+F 1 "+5V" H 6140 2698 50  0000 C CNN
+F 2 "" H 6125 2525 50  0001 C CNN
+F 3 "" H 6125 2525 50  0001 C CNN
+	1    6125 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5E559F
+P 6125 4250
+AR Path="/5E388A2A/5F5E559F" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E559F" Ref="#PWR0129"  Part="1" 
+AR Path="/5F85242D/5F5E559F" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 6125 4000 50  0001 C CNN
+F 1 "GND" H 6130 4077 50  0000 C CNN
+F 2 "" H 6125 4250 50  0001 C CNN
+F 3 "" H 6125 4250 50  0001 C CNN
+	1    6125 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3400A Q?
+U 1 1 5F5E55A6
+P 8400 3575
+AR Path="/5E388A2A/5F5E55A6" Ref="Q?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55A6" Ref="Q3"  Part="1" 
+AR Path="/5F85242D/5F5E55A6" Ref="Q3"  Part="1" 
+F 0 "Q3" H 8606 3621 50  0000 L CNN
+F 1 "AO3400A" H 8606 3530 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8600 3500 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf" H 8400 3575 50  0001 L CNN
+F 4 "C20917" H 8400 3575 50  0001 C CNN "LCSC Part #"
+	1    8400 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F5E55AC
+P 8500 2525
+AR Path="/5E388A2A/5F5E55AC" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55AC" Ref="#PWR0130"  Part="1" 
+AR Path="/5F85242D/5F5E55AC" Ref="#PWR0135"  Part="1" 
+F 0 "#PWR0135" H 8500 2375 50  0001 C CNN
+F 1 "+5V" H 8515 2698 50  0000 C CNN
+F 2 "" H 8500 2525 50  0001 C CNN
+F 3 "" H 8500 2525 50  0001 C CNN
+	1    8500 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:0603WAF620JT5E R?
+U 1 1 5F5E55B4
+P 8500 2975
+AR Path="/5E388A2A/5F5E55B4" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55B4" Ref="R11"  Part="1" 
+AR Path="/5F85242D/5F5E55B4" Ref="R11"  Part="1" 
+F 0 "R11" H 8553 2775 50  0000 L CNN
+F 1 "0603WAF620JT5E" H 8500 2975 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8500 2975 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF620JT5E_C23222.pdf" H 8500 2975 50  0001 C CNN
+F 4 "C23222" H 8500 2975 50  0001 C CNN "LCSC Part #"
+	1    8500 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5E55BA
+P 8500 4250
+AR Path="/5E388A2A/5F5E55BA" Ref="#PWR?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55BA" Ref="#PWR0131"  Part="1" 
+AR Path="/5F85242D/5F5E55BA" Ref="#PWR0136"  Part="1" 
+F 0 "#PWR0136" H 8500 4000 50  0001 C CNN
+F 1 "GND" H 8505 4077 50  0000 C CNN
+F 2 "" H 8500 4250 50  0001 C CNN
+F 3 "" H 8500 4250 50  0001 C CNN
+	1    8500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_LED-Indication-Discrete:MT7403A-UR-A D?
+U 1 1 5F5E55C9
+P 4025 2850
+AR Path="/5E388A2A/5F5E55C9" Ref="D?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55C9" Ref="D1"  Part="1" 
+AR Path="/5F85242D/5F5E55C9" Ref="D1"  Part="1" 
+F 0 "D1" V 3975 3028 60  0000 L CNN
+F 1 "QBL7SA60D" V 3825 2900 60  0000 L CNN
+F 2 "digikey-footprints:LED_3mm_Radial" H 4225 3050 60  0001 L CNN
+F 3 "http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf" H 4225 3150 60  0001 L CNN
+F 4 "1125-1181-ND" H 4225 3250 60  0001 L CNN "Digi-Key_PN"
+F 5 "MT7403A-UR-A" H 4225 3350 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 4225 3450 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 4225 3550 60  0001 L CNN "Family"
+F 8 "http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf" H 4225 3650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/marktech-optoelectronics/MT7403A-UR-A/1125-1181-ND/4214630" H 4225 3750 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED RED CLEAR 3.0MM ROUND T/H" H 4225 3850 60  0001 L CNN "Description"
+F 11 "Marktech Optoelectronics" H 4225 3950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4225 4050 60  0001 L CNN "Status"
+	1    4025 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4025 2650 4025 2500
+$Comp
+L dk_LED-Indication-Discrete:MT7403A-UR-A D?
+U 1 1 5F5E55D9
+P 6125 2900
+AR Path="/5E388A2A/5F5E55D9" Ref="D?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55D9" Ref="D2"  Part="1" 
+AR Path="/5F85242D/5F5E55D9" Ref="D2"  Part="1" 
+F 0 "D2" V 6075 3078 60  0000 L CNN
+F 1 "QBL7IG60D" V 5950 2975 60  0000 L CNN
+F 2 "digikey-footprints:LED_3mm_Radial" H 6325 3100 60  0001 L CNN
+F 3 "http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf" H 6325 3200 60  0001 L CNN
+F 4 "1125-1181-ND" H 6325 3300 60  0001 L CNN "Digi-Key_PN"
+F 5 "MT7403A-UR-A" H 6325 3400 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 6325 3500 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 6325 3600 60  0001 L CNN "Family"
+F 8 "http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf" H 6325 3700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/marktech-optoelectronics/MT7403A-UR-A/1125-1181-ND/4214630" H 6325 3800 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED RED CLEAR 3.0MM ROUND T/H" H 6325 3900 60  0001 L CNN "Description"
+F 11 "Marktech Optoelectronics" H 6325 4000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6325 4100 60  0001 L CNN "Status"
+	1    6125 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_LED-Indication-Discrete:MT7403A-UR-A D?
+U 1 1 5F5E55E8
+P 8500 2900
+AR Path="/5E388A2A/5F5E55E8" Ref="D?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55E8" Ref="D3"  Part="1" 
+AR Path="/5F85242D/5F5E55E8" Ref="D3"  Part="1" 
+F 0 "D3" V 8450 3078 60  0000 L CNN
+F 1 "TSHA440" V 8300 2950 60  0000 L CNN
+F 2 "digikey-footprints:LED_3mm_Radial" H 8700 3100 60  0001 L CNN
+F 3 "http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf" H 8700 3200 60  0001 L CNN
+F 4 "1125-1181-ND" H 8700 3300 60  0001 L CNN "Digi-Key_PN"
+F 5 "MT7403A-UR-A" H 8700 3400 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 8700 3500 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 8700 3600 60  0001 L CNN "Family"
+F 8 "http://marktechopto.com/pdf/products/datasheet/MT7403A-UR-A.pdf" H 8700 3700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/marktech-optoelectronics/MT7403A-UR-A/1125-1181-ND/4214630" H 8700 3800 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED RED CLEAR 3.0MM ROUND T/H" H 8700 3900 60  0001 L CNN "Description"
+F 11 "Marktech Optoelectronics" H 8700 4000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8700 4100 60  0001 L CNN "Status"
+	1    8500 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 2700 8500 2525
+$Comp
+L Resistors:0603WAF620JT5E R?
+U 1 1 5F5E55F0
+P 6125 2975
+AR Path="/5E388A2A/5F5E55F0" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55F0" Ref="R10"  Part="1" 
+AR Path="/5F85242D/5F5E55F0" Ref="R10"  Part="1" 
+F 0 "R10" H 6178 2775 50  0000 L CNN
+F 1 "0603WAF620JT5E" H 6125 2975 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6125 2975 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF620JT5E_C23222.pdf" H 6125 2975 50  0001 C CNN
+F 4 "C23222" H 6125 2975 50  0001 C CNN "LCSC Part #"
+	1    6125 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3400A Q?
+U 1 1 5F5E55F7
+P 3925 3550
+AR Path="/5E388A2A/5F5E55F7" Ref="Q?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55F7" Ref="Q1"  Part="1" 
+AR Path="/5F85242D/5F5E55F7" Ref="Q1"  Part="1" 
+F 0 "Q1" H 4131 3596 50  0000 L CNN
+F 1 "AO3400A" H 4131 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4125 3475 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf" H 3925 3550 50  0001 L CNN
+F 4 "C20917" H 3925 3550 50  0001 C CNN "LCSC Part #"
+	1    3925 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:0603WAF1002T5E R?
+U 1 1 5F5E55FE
+P 3625 4000
+AR Path="/5E388A2A/5F5E55FE" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E55FE" Ref="R24"  Part="1" 
+AR Path="/5F85242D/5F5E55FE" Ref="R24"  Part="1" 
+F 0 "R24" V 3400 3800 50  0000 C CNN
+F 1 "0603WAF1002T5E" H 3625 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3625 4000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 3625 4000 50  0001 C CNN
+F 4 "C25804" H 3625 4000 50  0001 C CNN "LCSC Part #"
+	1    3625 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4025 3750 4025 4025
+Wire Wire Line
+	3625 3950 3625 4025
+Wire Wire Line
+	3625 4025 4025 4025
+Connection ~ 4025 4025
+Wire Wire Line
+	4025 4025 4025 4225
+Wire Wire Line
+	4025 3000 4025 2950
+Wire Wire Line
+	6125 3000 6125 3025
+Wire Wire Line
+	6125 3325 6125 3375
+Wire Wire Line
+	8500 3000 8500 3025
+Wire Wire Line
+	8500 3325 8500 3375
+Wire Wire Line
+	3100 3550 3250 3550
+Wire Wire Line
+	3625 3650 3625 3550
+Connection ~ 3625 3550
+Wire Wire Line
+	3625 3550 3725 3550
+$Comp
+L Resistors:0603WAF1002T5E R?
+U 1 1 5F5E5613
+P 5725 4025
+AR Path="/5E388A2A/5F5E5613" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E5613" Ref="R25"  Part="1" 
+AR Path="/5F85242D/5F5E5613" Ref="R25"  Part="1" 
+F 0 "R25" V 5500 3825 50  0000 C CNN
+F 1 "0603WAF1002T5E" H 5725 4025 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5725 4025 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 5725 4025 50  0001 C CNN
+F 4 "C25804" H 5725 4025 50  0001 C CNN "LCSC Part #"
+	1    5725 4025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5725 3975 5725 4050
+Wire Wire Line
+	5725 4050 6125 4050
+Wire Wire Line
+	5725 3675 5725 3575
+$Comp
+L Resistors:0603WAF1002T5E R?
+U 1 1 5F5E561D
+P 8100 4025
+AR Path="/5E388A2A/5F5E561D" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E561D" Ref="R26"  Part="1" 
+AR Path="/5F85242D/5F5E561D" Ref="R26"  Part="1" 
+F 0 "R26" V 7875 3825 50  0000 C CNN
+F 1 "0603WAF1002T5E" H 8100 4025 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 4025 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 8100 4025 50  0001 C CNN
+F 4 "C25804" H 8100 4025 50  0001 C CNN "LCSC Part #"
+	1    8100 4025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8100 3975 8100 4050
+Wire Wire Line
+	8100 4050 8500 4050
+Wire Wire Line
+	8100 3675 8100 3575
+Wire Wire Line
+	7500 3575 7700 3575
+Connection ~ 8100 3575
+Wire Wire Line
+	8100 3575 8200 3575
+Wire Wire Line
+	8500 3775 8500 4050
+Wire Wire Line
+	8500 4050 8500 4250
+Connection ~ 8500 4050
+Wire Wire Line
+	6125 3775 6125 4050
+Wire Wire Line
+	6125 4050 6125 4250
+Connection ~ 6125 4050
+Wire Wire Line
+	5175 3575 5375 3575
+Connection ~ 5725 3575
+Wire Wire Line
+	5725 3575 5825 3575
+Wire Wire Line
+	4025 3350 4025 3300
+Wire Wire Line
+	6125 2525 6125 2700
+$Comp
+L Resistors:0603WAF4700T5E R?
+U 1 1 5F5E5635
+P 8050 3575
+AR Path="/5E388A2A/5F5E5635" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E5635" Ref="R23"  Part="1" 
+AR Path="/5F85242D/5F5E5635" Ref="R23"  Part="1" 
+F 0 "R23" V 7825 3400 50  0000 C CNN
+F 1 "0603WAF4700T5E" H 8050 3575 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8050 3575 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf" H 8050 3575 50  0001 C CNN
+F 4 "C23179" H 8050 3575 50  0001 C CNN "LCSC Part #"
+	1    8050 3575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 3575 8100 3575
+$Comp
+L Resistors:0603WAF4700T5E R?
+U 1 1 5F5E563D
+P 5725 3575
+AR Path="/5E388A2A/5F5E563D" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E563D" Ref="R22"  Part="1" 
+AR Path="/5F85242D/5F5E563D" Ref="R22"  Part="1" 
+F 0 "R22" V 5500 3400 50  0000 C CNN
+F 1 "0603WAF4700T5E" H 5725 3575 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5725 3575 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf" H 5725 3575 50  0001 C CNN
+F 4 "C23179" H 5725 3575 50  0001 C CNN "LCSC Part #"
+	1    5725 3575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5675 3575 5725 3575
+$Comp
+L Resistors:0603WAF4700T5E R?
+U 1 1 5F5E5645
+P 3600 3550
+AR Path="/5E388A2A/5F5E5645" Ref="R?"  Part="1" 
+AR Path="/5E388A2A/5F55F709/5F5E5645" Ref="R21"  Part="1" 
+AR Path="/5F85242D/5F5E5645" Ref="R21"  Part="1" 
+F 0 "R21" V 3375 3375 50  0000 C CNN
+F 1 "0603WAF4700T5E" H 3600 3550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3600 3550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4700T5E_C23179.pdf" H 3600 3550 50  0001 C CNN
+F 4 "C23179" H 3600 3550 50  0001 C CNN "LCSC Part #"
+	1    3600 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 3550 3625 3550
+Text HLabel 3100 3550 0    50   Input ~ 0
+Red
+Text HLabel 5175 3575 0    50   Input ~ 0
+Green
+Text HLabel 7500 3575 0    50   Input ~ 0
+IR
+$EndSCHEMATC
