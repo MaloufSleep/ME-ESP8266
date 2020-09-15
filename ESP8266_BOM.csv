@@ -1,0 +1,38 @@
+Designator,Quantity,Value,LCSC Part #,Footprint,Notes
+"C1, ",1,TAJB107K006RNJ,C16133,Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H,
+"C3, C16, C17, ",3,CL21A106KAYNNNE,C15850,Capacitor_SMD:C_0805_2012Metric,
+"C4, C5, C13, C14, C15, C12, ",6,CL10A105KB8NNNC,C15849,Capacitor_SMD:C_0603_1608Metric,
+"C6, ",1,0402CG2R7C500NT,C1561,Capacitor_SMD:C_0402_1005Metric,
+"C7, ",1,0603CG3R0C500NT,C46219,Capacitor_SMD:C_0603_1608Metric,
+"C8, C2, C11, C18, C19, ",5,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,
+"C9, C10, ",2,0603CG6R8C500NT,C1679,Capacitor_SMD:C_0603_1608Metric,
+"D4, ",1,SS14,C2480,Diode_SMD:DO-214AC,
+"D5, ",1,M7,C95872,Diode_SMD:DO-214AC,
+"L1, ",1,SDCL1005C4N3STDF,C52051,Inductor_SMD:L_0402_1005Metric,
+"L2, ",1,LQG15HS2N2S02D,C86061,Inductor_SMD:L_0402_1005Metric,
+"Q2, Q3, Q6, Q1, ",4,AO3400A,C20917,Package_TO_SOT_SMD:SOT-23,
+"Q4, Q5, ",2,S8050_SMD,C2146,Package_TO_SOT_SMD:SOT-23,
+"R1, ",1,0603WAF2000T5E,C8218,Resistor_SMD:R_0603_1608Metric,
+"R2, R4, R5, R6, R7, R12, R13, R24, R25, R26, R20, ",11,0603WAF1002T5E,C25804,Resistor_SMD:R_0603_1608Metric,
+"R3, ",1,0603WAF1202T5E,C22790,Resistor_SMD:R_0603_1608Metric,
+"R8, R14, R23, R22, R21, R19, R15, R16, ",8,0603WAF4700T5E,C23179,Resistor_SMD:R_0603_1608Metric,
+"R9, R11, R10, ",3,0603WAF620JT5E,C23222,Resistor_SMD:R_0603_1608Metric,
+"R17, ",1,0805W8F2203T5E,C17556,Resistor_SMD:R_0805_2012Metric,
+"R18, ",1,0805W8F8202T5E,C17840,Resistor_SMD:R_0805_2012Metric,
+"SW1, SW2, ",2,TS-1187A-B-A-B,C318884,Button_Switch_SMD:TS-1187A-B-A-B,
+"U1, ",1,W25Q128JVSIQ,C97521,Package_SO:SO-8_5.3x6.2mm_P1.27mm,
+"U2, ",1,ESP8266EX,C77967,Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm_ThermalVias,
+"U3, ",1,MAX232ESE+T,C26860,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,
+"U4, ",1,NCP1117-3.3_SOT223,C26537,Package_TO_SOT_SMD:SOT-223-3_TabPin2,
+"U5, ",1,CH340C,C84681,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,
+"X1, ",1,X1E000021081900,C91747,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,
+D1,1,QBL7SA60D,,LED_3mm_Radial,substitution okay
+D2,1,QBL7IG60D,,LED_3mm_Radial,substitution okay
+D3,1,TSHA4400,,LED_3mm_Radial,substitution okay
+"J1, ",1,282834-4,,TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal,substitution okay
+"J2, ",1,68000-113HLF,,Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical,substitution okay
+"J3, ",1,10118193-0001LF,,digikey-footprints:USB_Micro_B_Female_10118193-0001LF,substitution okay
+"J4, ",1,68000-102HLF,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,substitution okay
+"J5, ",1,284391-3,,TerminalBlock_TE-Connectivity:TE_284391-3,substitution okay
+"K1, ",1,G5LE-14 DC5,,Relay_THT:Relay_SPDT_Omron-G5LE-1,substitution okay
+"U6, ",1,VS1838B,,OptoDevice:Vishay_MOLD-3Pin,substitution okay
