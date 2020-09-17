@@ -5,7 +5,9 @@ Malouf Electronics - ESP8266 Dev Board
 
 The ultimate ESP8266 development board built by makers for makers.
 
-[BUY NOW](https://www.amazon.com/dp/B08GY2GTW5?ref=myi_title_dp)
+
+<a href="https://www.amazon.com/dp/B08GY2GTW5?ref=myi_title_dp"><img src="https://github.com/MaloufSleep/ME-ESP8266/blob/master/buynow.png?raw=true" /></a>
+
 
 [Malouf Electronics website](https://www.maloufelectronics.com)
 
@@ -66,4 +68,5 @@ void loop() {
 
 If all goes well the board will program and the red LED will start blinking.
 
-[BUY NOW](https://www.amazon.com/dp/B08GY2GTW5?ref=myi_title_dp)
+<a href="https://www.amazon.com/dp/B08GY2GTW5?ref=myi_title_dp"><img src="https://github.com/MaloufSleep/ME-ESP8266/blob/master/buynow.png?raw=true" /></a>
+
