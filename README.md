@@ -46,7 +46,7 @@ The ultimate ESP8266 development board built by makers for makers.
 * Flash Mode: DOUT
 * Flash Frequency: 40MHz
 * Port: (the serial port of your USB cable)
-5. Paste the code below into a new sketch and upload to the board:
+5. Paste the code below into a new sketch and upload to the board (In order to upload you may have to hold the boot button until esptool connects):
 
 ```
 const int LED_RED = 5;
